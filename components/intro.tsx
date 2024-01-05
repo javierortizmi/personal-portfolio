@@ -13,8 +13,8 @@ import photo from "@/public/photo.jpg";
 
 export default function Intro() {
   return (
-    <section className="mb-20 text-center md:mb-0">
-      <div className="flex items-center justify-center">
+    <section className="mb-20 md:mb-0">
+      <div className="flex items-center justify-start">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -58,7 +58,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col w-full md:flex-row items-center justify-center gap-2 md:gap-4 text-lg font-medium"
+        className="flex flex-col w-full md:flex-row items-center justify-center gap-2 md:gap-4 text-md font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
