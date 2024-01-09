@@ -3,17 +3,24 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-
-import { motion } from 'framer-motion';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 
+import { motion } from 'framer-motion';
+
 import photo from "@/public/photo.jpg";
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className="mb-20 md:mb-0">
+    <section 
+      className="mb-20 sm:mb-0 scroll-mt-96"
+      id='home'
+      ref={ref}
+    >
       <div className="flex items-center justify-start">
         <div className="relative">
           <motion.div
@@ -45,7 +52,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 text-lg font-medium !leading-normal sm:text-xl md:text-2xl lg:text-3xl"
+        className="mb-10 mt-4 text-xl font-medium !leading-normal sm:text-2xl md:text-3xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
