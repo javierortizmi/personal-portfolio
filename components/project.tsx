@@ -6,10 +6,11 @@ import React, { useRef } from "react";
 import { projectsData } from "@/lib/data";
 
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 type ProjectProps = (typeof projectsData)[number];
 
-export default function Project({ title, description, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description, tags, imageUrl, demoUrl, codeUrl }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -34,7 +35,27 @@ export default function Project({ title, description, tags, imageUrl }: ProjectP
           group-even:sm:ml-[50%]"
         >
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-          <p className="leading-relaxed text-gray-700">{description}</p>
+          <p className="leading-relaxed text-gray-700 mb-6">{description}</p>
+          <div
+            className="flex flex-wrap justify-center gap-2 mb-4 sm:justify-start sm:gap-4 sm:mb-0"
+          >
+            {demoUrl && (
+              <Link
+                href={demoUrl}
+                className="w-fit flex justify-center items-center p-2 bg-blue-600 text-gray-50 rounded-lg hover:bg-blue-700 transition capitalize"
+              >
+                try a demo
+              </Link>
+            )}
+            {codeUrl && (
+              <Link
+                href={codeUrl}
+                className="w-fit flex justify-center items-center p-2 bg-gray-50 text-gray-950 rounded-lg border border-black border-opacity-20 hover:bg-gray-100 transition capitalize"
+              >
+                view code
+              </Link>
+            )}
+          </div>
           <ul className="flex flex-wrap justify-center mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
