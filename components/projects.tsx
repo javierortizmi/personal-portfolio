@@ -11,7 +11,7 @@ import Project from '@/components/project'
 import SectionHeading from '@/components/section-heading'
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Projects", 0.4);
 
   return (
     <motion.section

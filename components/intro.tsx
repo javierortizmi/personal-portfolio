@@ -13,7 +13,7 @@ import photo from "@/public/photo.jpg";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.5);
+  const { ref } = useSectionInView('Home', 0.6);
 
   return (
     <section 
@@ -52,7 +52,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 text-xl font-medium !leading-normal sm:text-2xl md:text-3xl"
+        className="mb-10 mt-4 text-xl font-medium !leading-normal sm:text-2xl md:text-3xl lg:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
