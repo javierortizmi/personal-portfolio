@@ -28,7 +28,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <article className="relative h-auto sm:h-96 flex bg-gray-100 hover:bg-gray-200 border border-black border-opacity-10 rounded-lg shadow overflow-hidden transition">
+      <article className="relative h-auto flex bg-gray-100 hover:bg-gray-200 borderBlack rounded-lg shadow overflow-hidden transition">
         <div
           className="w-full sm:w-1/2 h-full flex flex-col p-6
           group-even:w-full 
@@ -36,9 +36,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
         >
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
           <p className="leading-relaxed text-gray-700 mb-6">{description}</p>
-          <div
-            className="flex flex-wrap justify-center gap-2 mb-4 sm:justify-start sm:gap-4 sm:mb-0"
-          >
+          <div className="flex flex-wrap justify-center gap-2 mb-6 sm:justify-start sm:gap-4">
             {demoUrl && (
               <Link
                 href={demoUrl}
@@ -56,7 +54,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
               </Link>
             )}
           </div>
-          <ul className="flex flex-wrap justify-center mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap justify-center gap-2">
             {tags.map((tag, index) => (
               <li
                 key={index}

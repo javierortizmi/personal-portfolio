@@ -38,7 +38,7 @@ export default function ExperienceItem({
           {date}
         </time>
         <h3 className="text-lg font-semibold text-gray-950 mt-2">{title}</h3>
-        <p className="mb-4 font-normal text-pretty">{description}</p>
+        <p className="mb-4 text-gray-700 text-pretty">{description}</p>
       </motion.div>
     </article>
   );

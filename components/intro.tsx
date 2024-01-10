@@ -11,16 +11,15 @@ import { motion } from 'framer-motion';
 
 import photo from "@/public/photo.jpg";
 import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
   const { ref } = useSectionInView('Home', 0.6);
+  const { setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
   return (
-    <section 
-      className="mb-20 sm:mb-0 scroll-mt-96"
-      id='home'
-      ref={ref}
-    >
+    <section className="mb-20 sm:mb-0 scroll-mt-96" id="home" ref={ref}>
       <div className="flex items-center justify-start">
         <div className="relative">
           <motion.div
@@ -73,6 +72,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group h-12 w-56 md:w-auto bg-gray-900 text-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here
           <BsArrowRight className="opacity-60 group-hover:translate-x-1 transition" />
@@ -80,7 +83,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer border border-black border-opacity-20"
+          className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack"
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -88,7 +91,7 @@ export default function Intro() {
         <Link
           href="https://www.linkedin.com/in/javierortizmi"
           target="_blank"
-          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition border border-black border-opacity-20"
+          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack"
         >
           <BsLinkedin className="w-4 h-4 text-[#0A66C2]" />
           LinkedIn
@@ -96,7 +99,7 @@ export default function Intro() {
         <Link
           href="https://github.com/javierortizmi"
           target="_blank"
-          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition border border-black border-opacity-20"
+          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack"
         >
           <FaGithubSquare className="w-5 h-5 text-[#181717]" />
           GitHub
