@@ -20,7 +20,7 @@ export default function Intro() {
 
   return (
     <section className="mb-20 sm:mb-0 scroll-mt-96" id="home" ref={ref}>
-      <div className="flex items-center justify-start">
+      <div className="flex items-center justify-start mb-6">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -55,12 +55,15 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I&apos;m Javier.</span> I&apos;m
-        a&nbsp;
-        <span className="font-bold">full-stack developer</span> with&nbsp;
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is&nbsp;
-        <span className="underline">React (Next.js)</span>.
+        Hi there! I&apos;m{" "}
+        <span className="font-bold">Javier Ortiz Millan,</span> a&nbsp;
+        <span className="underline">Telecommunications Engineering</span>{" "}
+        student with a concentration in&nbsp;
+        <span className="italic">Sound and Image. </span>
+        My focus is&nbsp;
+        <span className="underline">Audio AI</span>. 
+        I enjoy building{" "}
+        <span className="italic">sites & apps</span>.
       </motion.h1>
 
       <motion.div

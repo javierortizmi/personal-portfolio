@@ -39,7 +39,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li 
             key={index}
-            className="bg-white borderBlack rounded-xl px-5 py-3"
+            className="flex items-center justify-center bg-white borderBlack rounded-xl px-5 py-3 gap-x-2"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView={"animate"}
@@ -48,7 +48,12 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            <div
+              style={{ color: skill.color}}
+            >
+              {skill.icon}
+            </div>
+            {skill.name}
           </motion.li>
         ))}
       </ul>

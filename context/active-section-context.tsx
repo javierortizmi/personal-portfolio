@@ -4,6 +4,10 @@ import type { SectionName } from "@/lib/types";
 
 import React, { useState, createContext, useContext } from 'react';
 
+type ActiveSectionContextProviderProps = {
+  children: React.ReactNode;
+};
+
 type ActiveSectionContextType = {
   activeSection: SectionName;
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
@@ -15,9 +19,7 @@ export const ActiveSectionContext = createContext<ActiveSectionContextType | nul
 
 export default function ActiveSectionContextProvider({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
 

@@ -40,21 +40,23 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
             {demoUrl && (
               <Link
                 href={demoUrl}
-                className="w-fit flex justify-center items-center p-2 bg-blue-600 text-gray-50 rounded-lg hover:bg-blue-700 transition capitalize"
+                target="_blank"
+                className="w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg hover:bg-blue-700 transition capitalize"
               >
-                try a demo
+                explore demo
               </Link>
             )}
             {codeUrl && (
               <Link
                 href={codeUrl}
+                target="_blank"
                 className="w-fit flex justify-center items-center p-2 bg-gray-50 text-gray-950 rounded-lg border border-black border-opacity-20 hover:bg-gray-100 transition capitalize"
               >
                 view code
               </Link>
             )}
           </div>
-          <ul className="flex flex-wrap justify-center gap-2">
+          <ul className="flex flex-wrap justify-start gap-2">
             {tags.map((tag, index) => (
               <li
                 key={index}
