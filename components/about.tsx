@@ -8,20 +8,18 @@ import { useSectionInView } from '@/lib/hooks';
 import SectionHeading from '@/components/section-heading';
 
 export default function About() {
-  const { ref } = useSectionInView("About", 0.8);
+  const { ref } = useSectionInView("About", 0.85);
 
   return (
-    <motion.section 
-      className="flex flex-col justify-start w-full mb-20 leading-7 sm:mb-32 scroll-mt-28"
+    <motion.section
+      id="about"
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
-      id='about'
-      ref={ref}
+      className="flex flex-col justify-start w-full mb-20 leading-7 sm:mb-32 scroll-mt-28"
     >
-      <SectionHeading>
-        About me
-      </SectionHeading>
+      <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Accounting</span>, I decided to pursue my

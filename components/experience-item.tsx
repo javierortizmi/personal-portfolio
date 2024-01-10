@@ -22,7 +22,9 @@ export default function ExperienceItem({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.0]);
 
   return (
-    <article>
+    <article
+      className="mb-10 last:mb-0 ms-7"
+    >
       <div className="absolute w-8 h-8 rounded-full -start-4 border border-gray-900 bg-gray-700 flex items-center justify-center">
         <div className="text-gray-50">{icon}</div>
       </div>

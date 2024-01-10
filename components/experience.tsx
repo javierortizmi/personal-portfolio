@@ -18,18 +18,15 @@ export default function Experience() {
       className="mb-28 scroll-mt-28"
     >
       <SectionHeading>My experience</SectionHeading>
-      <ol
+      <div
         className="relative border-s border-black border-opacity-20 ml-4"
       >
         {experiencesData.map((experience, index) => (
-          <li
-            className="mb-10 last:mb-0 ms-7"
-            key={index}
-          >
+          <React.Fragment key={index}>
             <ExperienceItem {...experience} />
-          </li>
+          </React.Fragment>
         ))}
-      </ol>
+      </div>
     </section>
   );
 }
