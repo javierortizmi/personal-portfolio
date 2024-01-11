@@ -1,15 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
+import { FaCode } from "react-icons/fa6";
+import { IoTelescope } from "react-icons/io5";
 
 import { projectsData } from "@/lib/data";
 
 import { motion, useScroll, useTransform } from "framer-motion";
-import Link from "next/link";
-import { BsBinoculars } from "react-icons/bs";
-import { FaCode } from "react-icons/fa6";
-import { IoTelescope } from "react-icons/io5";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -31,20 +30,22 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
       }}
       className="group/project mb-3 sm:mb-8 last:mb-0"
     >
-      <article className="relative h-auto flex bg-gray-100 group-hover/project:bg-gray-200 borderBlack rounded-lg shadow overflow-hidden transition">
+      <article className="relative h-auto flex bg-gray-100 group-hover/project:bg-gray-200 borderBlack rounded-lg shadow overflow-hidden transition dark:text-white dark:bg-white/10 dark:group-hover/project:bg-white/20">
         <div
           className="w-full sm:w-1/2 h-full flex flex-col p-6
           group-even/project:w-full 
           group-even/project:sm:ml-[50%]"
         >
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
-          <p className="leading-relaxed text-gray-700 mb-6">{description}</p>
-          <div className="flex flex-wrap justify-center gap-x-3 mb-6 sm:justify-start sm:gap-3">
+          <p className="leading-relaxed text-gray-700 mb-6 dark:text-white/70">
+            {description}
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-3 gap-y-2 mb-6 sm:justify-start sm:gap-3">
             {demoUrl && (
               <Link
                 href={demoUrl}
                 target="_blank"
-                className="group/demo w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize"
+                className="group/demo w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize dark:text-gray-200"
               >
                 explore demo
                 <IoTelescope className="group-hover/demo:-rotate-[20deg] transition" />
@@ -54,7 +55,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
               <Link
                 href={codeUrl}
                 target="_blank"
-                className="group/code w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize"
+                className="group/code w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize dark:bg-gray-200"
               >
                 view code
                 <FaCode className="group-hover/code:rotate-180 transition" />
@@ -65,7 +66,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
             {tags.map((tag, index) => (
               <li
                 key={index}
-                className="bg-black/[0.7] px-3 py-1 text-xs uppercase tracking-wider text-white rounded-full"
+                className="bg-black/[0.7] px-3 py-1 text-xs uppercase tracking-wider text-white rounded-full dark:text-white/70"
               >
                 {tag}
               </li>

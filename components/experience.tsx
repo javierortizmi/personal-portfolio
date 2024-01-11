@@ -19,7 +19,7 @@ export default function Experience() {
     >
       <SectionHeading>My experience</SectionHeading>
       <div
-        className="relative border-s border-black border-opacity-20 ml-4"
+        className="relative border-s border-black border-opacity-20 ml-4 dark:border-white/30"
       >
         {experiencesData.map((experience, index) => (
           <React.Fragment key={index}>

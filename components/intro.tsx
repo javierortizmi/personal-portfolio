@@ -61,8 +61,7 @@ export default function Intro() {
         student with a concentration in&nbsp;
         <span className="italic">Sound and Image. </span>
         My focus is&nbsp;
-        <span className="underline">Audio AI</span>. 
-        I also enjoy building{" "}
+        <span className="underline">Audio AI</span>. I also enjoy building{" "}
         <span className="italic">sites & apps</span>.
       </motion.h1>
 
@@ -86,7 +85,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download
-          className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack"
+          className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10"
         >
           Download CV
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -94,7 +93,7 @@ export default function Intro() {
         <Link
           href="https://www.linkedin.com/in/javierortizmi"
           target="_blank"
-          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack"
+          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack dark:bg-white/10 dark:hover:text-gray-50"
         >
           <BsLinkedin className="w-4 h-4 text-[#0A66C2]" />
           LinkedIn
@@ -102,9 +101,9 @@ export default function Intro() {
         <Link
           href="https://github.com/javierortizmi"
           target="_blank"
-          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack"
+          className="h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-100 transition borderBlack dark:bg-white/10 dark:hover:text-gray-50"
         >
-          <FaGithubSquare className="w-5 h-5 text-[#181717]" />
+          <FaGithubSquare className="w-5 h-5 text-[#181717] dark:text-white/60" />
           GitHub
         </Link>
       </motion.div>

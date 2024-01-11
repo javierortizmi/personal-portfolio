@@ -11,7 +11,7 @@ export default function SectionDivider() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.15 }}
     >
-      <div className="bg-gray-200 h-full w-1 rounded-full" />
+      <div className="bg-gray-200 h-full w-1 rounded-full dark:bg-opacity-20" />
     </motion.div>
   );
 }

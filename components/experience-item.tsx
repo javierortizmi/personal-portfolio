@@ -36,11 +36,11 @@ export default function ExperienceItem({
           opacity: opacityProgress,
         }}
       >
-        <time className="mb-1 text-sm font-normal leading-none text-gray-500">
+        <time className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-white/40">
           {date}
         </time>
-        <h3 className="text-lg font-semibold text-gray-950 mt-2">{title}</h3>
-        <p className="mb-4 text-gray-700 text-pretty">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-950 mt-2 dark:text-white/90">{title}</h3>
+        <p className="mb-4 text-gray-700 text-pretty dark:text-white/60">{description}</p>
       </motion.div>
     </article>
   );

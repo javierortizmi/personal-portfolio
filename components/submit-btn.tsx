@@ -8,7 +8,7 @@ export default function SubmitBtn() {
   return (
     <button
       type="submit"
-      className="group flex items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-gray-50 rounded-full outline-none transition focus:scale-105 hover:scale-105 active:scale-100 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65"
+      className="group flex items-center justify-center gap-2 h-12 w-32 bg-gray-900 text-gray-50 rounded-full outline-none transition focus:scale-105 hover:scale-105 active:scale-100 hover:bg-gray-950 disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
       disabled={pending}
     >
       {pending ? (
