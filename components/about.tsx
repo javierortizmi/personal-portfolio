@@ -50,13 +50,13 @@ export default function About() {
       <p className="mb-3">
         Currently on the lookout for an{" "}
         <span className="font-medium">internship</span> to dive deeper into the
-        world of telecommunications, I'm excited to blend my technical expertise
-        with my knack for innovation. Let's join forces and{" "}
+        world of telecommunications, I&apos;m excited to blend my technical
+        expertise with my knack for innovation. Let&apos;s join forces and{" "}
         <span className="underline">create</span> some tech magic!
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy producing
-        music, playing video games, and watching movies. I also enjoy{" "}
+        <span className="italic">When I&apos;m not coding</span>, I enjoy
+        producing music, playing video games, and watching movies. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
         learning about <span className="font-medium">history and economy</span>.
       </p>
