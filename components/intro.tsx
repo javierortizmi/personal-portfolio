@@ -62,7 +62,7 @@ export default function Intro() {
         <span className="italic">Sound and Image. </span>
         My focus is&nbsp;
         <span className="underline">Audio AI</span>. 
-        I enjoy building{" "}
+        I also enjoy building{" "}
         <span className="italic">sites & apps</span>.
       </motion.h1>
 

@@ -34,35 +34,31 @@ export default function About() {
         have been able to explore the field of telecommunications in depth. I
         have taken courses in{" "}
         <span className="italic">
-          signal processing, machine learning, image and audio processing,
-          computer vision, digital communications, software engineering,
-          computer architecture, and computer networks.
+          machine learning, image and audio processing, computer architecture,
+          and computer networks.
         </span>{" "}
-        I am currently working on a{" "}
-        <span className="font-medium">research project</span> that involves
-        using machine learning to{" "}
-        <span className="font-medium">generate music</span>.
+        During my year abroad at{" "}
+        <span className="font-medium">
+          University of Maryland, College Park
+        </span>
+        , I expanded my knowledge in{" "}
+        <span className="italic">
+          computer vision, artificial intelligence, and data science.
+        </span>{" "}
+        and joined the <span className="font-medium">Leatherbacks Club</span>.
       </p>
       <p className="mb-3">
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. Currently on the lookout for an internship to
-        dive deeper into the world of telecommunications, I'm excited to blend
-        my technical expertise with my knack for innovation. Let's join forces
-        and create some tech magic!
+        Currently on the lookout for an{" "}
+        <span className="font-medium">internship</span> to dive deeper into the
+        world of telecommunications, I'm excited to blend my technical expertise
+        with my knack for innovation. Let's join forces and{" "}
+        <span className="underline">create</span> some tech magic!
       </p>
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and producing music. I also enjoy{" "}
+        <span className="italic">When I'm not coding</span>, I enjoy producing
+        music, playing video games, and watching movies. I also enjoy{" "}
         <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and economy</span>.
+        learning about <span className="font-medium">history and economy</span>.
       </p>
     </motion.section>
   );

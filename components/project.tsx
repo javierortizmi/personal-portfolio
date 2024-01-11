@@ -7,6 +7,9 @@ import { projectsData } from "@/lib/data";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import { BsBinoculars } from "react-icons/bs";
+import { FaCode } from "react-icons/fa6";
+import { IoTelescope } from "react-icons/io5";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -26,37 +29,39 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group/project mb-3 sm:mb-8 last:mb-0"
     >
-      <article className="relative h-auto flex bg-gray-100 hover:bg-gray-200 borderBlack rounded-lg shadow overflow-hidden transition">
+      <article className="relative h-auto flex bg-gray-100 group-hover/project:bg-gray-200 borderBlack rounded-lg shadow overflow-hidden transition">
         <div
           className="w-full sm:w-1/2 h-full flex flex-col p-6
-          group-even:w-full 
-          group-even:sm:ml-[50%]"
+          group-even/project:w-full 
+          group-even/project:sm:ml-[50%]"
         >
           <h3 className="text-2xl font-semibold mb-2">{title}</h3>
           <p className="leading-relaxed text-gray-700 mb-6">{description}</p>
-          <div className="flex flex-wrap justify-center gap-2 mb-6 sm:justify-start sm:gap-4">
+          <div className="flex flex-wrap justify-center gap-x-3 mb-6 sm:justify-start sm:gap-3">
             {demoUrl && (
               <Link
                 href={demoUrl}
                 target="_blank"
-                className="w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg hover:bg-blue-700 transition capitalize"
+                className="group/demo w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize"
               >
                 explore demo
+                <IoTelescope className="group-hover/demo:-rotate-[20deg] transition" />
               </Link>
             )}
             {codeUrl && (
               <Link
                 href={codeUrl}
                 target="_blank"
-                className="w-fit flex justify-center items-center p-2 bg-gray-50 text-gray-950 rounded-lg border border-black border-opacity-20 hover:bg-gray-100 transition capitalize"
+                className="group/code w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize"
               >
                 view code
+                <FaCode className="group-hover/code:rotate-180 transition" />
               </Link>
             )}
           </div>
-          <ul className="flex flex-wrap justify-start gap-2">
+          <ul className="flex flex-wrap justify-center sm:justify-start gap-2">
             {tags.map((tag, index) => (
               <li
                 key={index}
@@ -73,18 +78,18 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
           alt={title}
           quality={95}
           className="absolute hidden sm:block top-8 -right-80 md:-right-64 w-[34rem] rounded-lg shadow-xl transition 
-          group-hover:scale-[1.04] 
-          group-hover:-translate-x-3 
-          group-hover:translate-y-3 
-          group-hover:-rotate-2
+          group-hover/project:scale-[1.04] 
+          group-hover/project:-translate-x-3 
+          group-hover/project:translate-y-3 
+          group-hover/project:-rotate-2
 
-          group-even:group-hover:translate-x-3 
-          group-even:group-hover:translate-y-3 
-          group-even:group-hover:rotate-2
+          group-even/project:group-hover/project:translate-x-3 
+          group-even/project:group-hover/project:translate-y-3 
+          group-even/project:group-hover/project:rotate-2
 
-          group-even:right-[initial]
-          group-even:-left-80 
-          group-even:md:-left-64"
+          group-even/project:right-[initial]
+          group-even/project:-left-80 
+          group-even/project:md:-left-64"
         />
       </article>
     </motion.div>
