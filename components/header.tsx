@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <header className="z-50 relative flex justify-center">
       <motion.nav
-        className="fixed flex justify-center items-center w-full top-0 h-20 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur sm:top-6 sm:h-14 sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed flex justify-center items-center w-full top-0 h-auto py-2 sm:py-0 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur sm:top-6 sm:h-14 sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
       >

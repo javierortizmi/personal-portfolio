@@ -23,7 +23,7 @@ export default function ExperienceItem({
 
   return (
     <article
-      className="mb-10 last:mb-0 ms-7"
+      className="mb-10 last:mb-0 ms-7 w-full overflow-hidden"
     >
       <div className="absolute w-8 h-8 rounded-full -start-4 border border-gray-900 bg-gray-700 flex items-center justify-center">
         <div className="text-gray-50">{icon}</div>

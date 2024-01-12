@@ -45,7 +45,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
               <Link
                 href={demoUrl}
                 target="_blank"
-                className="group/demo w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize dark:text-gray-200"
+                className="group/demo w-48 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize dark:text-gray-200"
               >
                 explore demo
                 <IoTelescope className="group-hover/demo:-rotate-[20deg] transition" />
@@ -55,7 +55,7 @@ export default function Project({ title, description, tags, imageUrl, demoUrl, c
               <Link
                 href={codeUrl}
                 target="_blank"
-                className="group/code w-40 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize dark:bg-gray-200"
+                className="group/code w-48 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize dark:bg-gray-200"
               >
                 view code
                 <FaCode className="group-hover/code:rotate-180 transition" />
