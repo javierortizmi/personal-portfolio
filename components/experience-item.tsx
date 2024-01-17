@@ -22,9 +22,7 @@ export default function ExperienceItem({
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.0]);
 
   return (
-    <article
-      className="mb-10 last:mb-0 ms-7 w-full overflow-hidden"
-    >
+    <article className="mb-10 last:mb-0 ms-7 w-full overflow-hidden">
       <div className="absolute w-8 h-8 rounded-full -start-4 border border-gray-900 bg-gray-700 flex items-center justify-center">
         <div className="text-gray-50">{icon}</div>
       </div>
@@ -39,8 +37,15 @@ export default function ExperienceItem({
         <time className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-white/40">
           {date}
         </time>
-        <h3 className="text-lg font-semibold text-gray-950 mt-2 dark:text-white/90">{title}</h3>
-        <p className="mb-4 text-gray-700 text-pretty dark:text-white/60">{description}</p>
+        <h3 className="text-lg font-semibold text-gray-950 mt-2 dark:text-white/90">
+          {title}
+        </h3>
+        <p className="mb-4 text-gray-700 text-pretty dark:text-white/60">
+          {description}
+        </p>
+        <p className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-white/40">
+          {location}
+        </p>
       </motion.div>
     </article>
   );

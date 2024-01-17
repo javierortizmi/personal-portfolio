@@ -38,25 +38,33 @@ export const links = [
 export const experiencesData = [
   {
     title: "Telecommunications Engineering student",
-    location: "Madrid, ES",
+    location: "Madrid, Spain",
     description:
       "Telecommunications Engineering with a concentration in Sound and Image at Carlos III University.",
     icon: React.createElement(LuGraduationCap),
     date: "Expected in June 2025",
   },
   {
-    title: "Mathematics Private Tutor",
-    location: "Madrid, ES",
+    title: "Computer and Electrical Engineering student",
+    location: "College Park, MD",
     description:
-      "Implemented new ways of teaching, providing useful lessons that emphasize practicality and real-life application. I used a variety of teaching methods depending on the student's needs and learning style.",
+      "Exchange Year Engineering program at University of Maryland, College Park.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Aug 2023 - May 2024",
+  },
+  {
+    title: "Mathematics Private Tutor",
+    location: "Madrid, Spain",
+    description:
+      "Provided useful lessons that emphasize practicality and real-life application. I used a variety of teaching methods depending on the student's needs and learning style.",
     icon: React.createElement(CgWorkAlt),
     date: "Feb 2023 - Jun 2023",
   },
   {
     title: "Lifeguard",
-    location: "Madrid, ES",
+    location: "Madrid, Spain",
     description:
-      "Always guaranteed surveillance, security and prevention. I also provided first aid when needed and intervened in different situations of risk with a 100% success rate.",
+      "Always guaranteed surveillance, security and prevention. I also provided first aid when needed and intervened in different situations of risk with total success.",
     icon: React.createElement(CgWorkAlt),
     date: "Jun 2022 - Jun 2023 (Seasonal)",
   },
