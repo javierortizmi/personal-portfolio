@@ -30,8 +30,9 @@ export default function Intro() {
             <Image
               src={photo}
               alt="Javier portrait"
+              quality={100}
               priority={true}
-              className="h-24 w-24 object-cover rounded-full border-4 border-white shadow-xl"
+              className="h-24 w-24 object-cover rounded-full border-2 border-white shadow-xl"
             />
           </motion.div>
           <motion.span
