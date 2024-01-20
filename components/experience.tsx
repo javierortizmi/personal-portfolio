@@ -13,13 +13,13 @@ export default function Experience({
 }: {
   dictionary: Dictionary;
 }) {
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView(dictionary.links[4].name);
 
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28">
-      <SectionHeading>My experience</SectionHeading>
+      <SectionHeading>{dictionary.experiencesData.title}</SectionHeading>
       <div className="relative border-s border-black border-opacity-20 ml-4 dark:border-white/30">
-        {dictionary.experiencesData.map((experience, index) => (
+        {dictionary.experiencesData.experiences.map((experience, index) => (
           <React.Fragment key={index}>
             <ExperienceItem experience={experience} />
           </React.Fragment>

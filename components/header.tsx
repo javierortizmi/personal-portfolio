@@ -20,11 +20,11 @@ export default function Header({
   return (
     <header className="z-50 relative flex justify-center">
       <motion.nav
-        className="fixed flex justify-center items-center w-full top-0 h-auto py-2 sm:py-0 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur sm:top-6 sm:h-14 sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="fixed flex justify-center items-center w-full top-0 h-auto py-2 sm:py-0 px-0 sm:px-3 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur sm:top-6 sm:h-14 sm:w-auto sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <ul className="flex w-72 items-center justify-center flex-wrap gap-x-3 text-base font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+        <ul className="flex w-96 items-center justify-center flex-wrap gap-x-3 text-base font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-2 md:gap-5">
           {dictionary.links.map((link) => (
             <li
               key={link.hash}

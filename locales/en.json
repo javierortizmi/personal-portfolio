@@ -7,52 +7,93 @@
     { "name": "Experience", "hash": "#experience" },
     { "name": "Contact", "hash": "#contact" }
   ],
-  "experiencesData": [
-    {
-      "title": "Telecommunications Engineering student",
-      "location": "Madrid, Spain",
-      "description": "Telecommunications Engineering with a concentration in Sound and Image at Carlos III University.",
-      "icon": "education",
-      "date": "Expected in June 2025"
-    },
-    {
-      "title": "Computer and Electrical Engineering student",
-      "location": "College Park, MD",
-      "description": "Exchange Year Engineering program at University of Maryland, College Park.",
-      "icon": "education",
-      "date": "Aug 2023 - May 2024"
-    },
-    {
-      "title": "Mathematics Private Tutor",
-      "location": "Madrid, Spain",
-      "description": "Provided useful lessons that emphasize practicality and real-life application. I used a variety of teaching methods depending on the student's needs and learning style.",
-      "icon": "work",
-      "date": "Feb 2023 - Jun 2023"
-    },
-    {
-      "title": "Lifeguard",
-      "location": "Madrid, Spain",
-      "description": "Always guaranteed surveillance, security and prevention. I also provided first aid when needed and intervened in different situations of risk with total success.",
-      "icon": "work",
-      "date": "Jun 2022 - Jun 2023 (Seasonal)"
-    }
-  ],
-  "projectsData": [
-    {
-      "title": "Music Player App",
-      "description": "Spotify Clone coded in Kotlin and developed in Android Studio, fetches the songs from a Firebase database and provides the feature of adjusting the device volume with the user speed (GPS).",
-      "tags": ["Android Studio", "Kotlin", "GPS", "Google Ads", "Firebase"],
-      "imageUrl": "/music_player_preview.jpg",
-      "demoUrl": "https://appetize.io/app/2va72f4rcuub446rz5mn22ve6m?audio=true&device=pixel7pro&osVersion=13.0",
-      "codeUrl": "https://github.com/javierortizmi/MusicPlayerApp"
-    },
-    {
-      "title": "Robot with Obstacle Detection",
-      "description": "Autonomous Vehicle Project developed in C, shows the acquired knowledge in several peripherals controlled by the microcontroller NUCLEO-L152RE Board.",
-      "tags": ["C (Programming Language)", "STMicroelectronics", "Bluetooth"],
-      "imageUrl": "/robot_preview.jpg",
-      "demoUrl": null,
-      "codeUrl": "https://github.com/javierortizmi/AutonomousVehicle"
-    }
-  ]
+  "introData": {
+    "introParagraph": "Hi there! I'm <b>Javier Ortiz Millan</b>, a <u>Telecommunications Engineering</u> student with a concentration in <i>Sound and Image</i>. My focus is <u>Audio AI</u>. I also enjoy building <i>sites & apps</i>.",
+    "ContactBtn": "Contact me here",
+    "CVBtn": "Download CV"
+  },
+  "experiencesData": {
+    "title": "Experience",
+    "experiences": [
+      {
+        "title": "Telecommunications Engineering student",
+        "location": "Madrid, Spain",
+        "description": "Telecommunications Engineering with a concentration in Sound and Image at Carlos III University.",
+        "icon": "education",
+        "date": "Expected in June 2025"
+      },
+      {
+        "title": "Computer and Electrical Engineering student",
+        "location": "College Park, MD",
+        "description": "Exchange Year Engineering program at University of Maryland, College Park.",
+        "icon": "education",
+        "date": "Aug 2023 - May 2024"
+      },
+      {
+        "title": "Mathematics Private Tutor",
+        "location": "Madrid, Spain",
+        "description": "Provided useful lessons that emphasize practicality and real-life application. I used a variety of teaching methods depending on the student's needs and learning style.",
+        "icon": "work",
+        "date": "Feb 2023 - Jun 2023"
+      },
+      {
+        "title": "Lifeguard",
+        "location": "Madrid, Spain",
+        "description": "Always guaranteed surveillance, security and prevention. I also provided first aid when needed and intervened in different situations of risk with total success.",
+        "icon": "work",
+        "date": "Jun 2022 - Jun 2023 (Seasonal)"
+      }
+    ]
+  },
+  "projectsData": {
+    "title": "Projects",
+    "projects": [
+      {
+        "title": "Music Player App",
+        "description": "Spotify Clone coded in Kotlin and developed in Android Studio, fetches the songs from a Firebase database and provides the feature of adjusting the device volume with the user speed (GPS).",
+        "tags": ["Android Studio", "Kotlin", "GPS", "Google Ads", "Firebase"],
+        "imageUrl": "/music_player_preview.jpg",
+        "demoUrl": "https://appetize.io/app/2va72f4rcuub446rz5mn22ve6m?audio=true&device=pixel7pro&osVersion=13.0",
+        "codeUrl": "https://github.com/javierortizmi/MusicPlayerApp"
+      },
+      {
+        "title": "Robot with Obstacle Detection",
+        "description": "Autonomous Vehicle Project developed in C, shows the acquired knowledge in several peripherals controlled by the microcontroller NUCLEO-L152RE Board.",
+        "tags": ["C (Programming Language)", "STMicroelectronics", "Bluetooth"],
+        "imageUrl": "/robot_preview.jpg",
+        "demoUrl": null,
+        "codeUrl": "https://github.com/javierortizmi/AutonomousVehicle"
+      }
+    ]
+  },
+  "skillsData": {
+    "title": "Skills"
+  },
+  "aboutData": {
+    "title": "About Me",
+    "paragraphs": [
+      "After deciding that I wanted to pursue a career in Telecommunications, I started wondering how I could combine my passion for the intricate world of audio with my technical expertise. I started researching the field of Audio AI and was fascinated by the possibilities.",
+
+      "During my degree at Carlos III University of Madrid, I have been able to explore the field of telecommunications in depth. I have taken courses in object-oriented programming, signal processing, systems architecture, electric components and circuit design, microprocessors, and computer networks. During my year abroad at University of Maryland, College Park, I expanded my knowledge in computer vision, artificial intelligence, web and app development, and cybersecurity.",
+
+      "Currently on the lookout for an internship to dive deeper into the world of telecommunications, I'm excited to blend my technical expertise with my knack for innovation.",
+
+      "When I'm not coding, I enjoy producing music, playing video games, and learning new things.",
+
+      "Let's join forces and create some tech magic!"
+    ]
+  },
+  "contactData": {
+    "title": "Contact Me",
+    "description": "Please contact me directly at javierortizmi@gmail.com or through this form.",
+    "placeholderEmail": "Your email",
+    "placeholderMessage": "Your message",
+    "submitBtn": "Submit"
+  },
+  "footerData": {
+    "rights": "All rights reserved.",
+    "aboutWebsite1": "About this website: ",
+    "aboutWebsite2": "built with",
+    "code": "Source Code"
+  }
 }

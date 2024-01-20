@@ -17,17 +17,15 @@ export default async function IndexPage({
 
   return (
     <main className="flex flex-col px-8 sm:px-0 w-full mx-auto max-w-md sm:max-w-xl md:max-w-2xl lg:max-w-3xl">
-      <p>Current locale: {lang}</p>
-      <p>
-        {dictionary.experiencesData[1].title}
-      </p>
-      <Intro />
+      
+      <div className="w-full h-36 sm:h-28" />
+      <Intro dictionary={dictionary} />
       <SectionDivider />
-      <About />
+      <About dictionary={dictionary} />
       <Projects dictionary={dictionary} />
-      <Skills />
+      <Skills dictionary={dictionary} />
       <Experience dictionary={dictionary} />
-      <Contact />
+      <Contact dictionary={dictionary} />
     </main>
   );
 }

@@ -13,13 +13,13 @@ export default function Projects({
 }: {
   dictionary: Dictionary;
 }) {
-  const { ref } = useSectionInView("Projects", 0.4);
+  const { ref } = useSectionInView(dictionary.links[2].name, 0.4);
 
   return (
     <section id="projects" ref={ref} className="mb-28 scroll-mt-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>{dictionary.projectsData.title}</SectionHeading>
       <div>
-        {dictionary.projectsData.map((project, index) => (
+        {dictionary.projectsData.projects.map((project, index) => (
           <React.Fragment key={index}>
             <Project project={project} />
           </React.Fragment>

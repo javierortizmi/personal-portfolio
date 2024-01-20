@@ -8,6 +8,7 @@ import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 
 import SectionHeading from "@/components/section-heading";
+import { Dictionary } from "@/lib/types";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -23,12 +24,16 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+export default function Skills({
+  dictionary,
+}: {
+  dictionary: Dictionary;
+}) {
+  const { ref } = useSectionInView(dictionary.links[3].name);
 
   return (
     <section className="mb-28 sm:mb-40 scroll-mt-28" id="skills" ref={ref}>
-      <SectionHeading>My skills</SectionHeading>
+      <SectionHeading>{dictionary.skillsData.title}</SectionHeading>
       <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

@@ -2,7 +2,11 @@ import React from 'react'
 import { useFormStatus } from "react-dom";
 import { FaPaperPlane } from 'react-icons/fa';
 
-export default function SubmitBtn() {
+export default function SubmitBtn({
+  value,
+}: {
+  value: string;
+}) {
   const { pending } = useFormStatus();
 
   return (
@@ -17,7 +21,7 @@ export default function SubmitBtn() {
         />
       ) : (
         <>
-          Submit
+          {value}
           <FaPaperPlane className="text-xs opacity-70 transition group-hover:translate-x-1 group-hover:-translate-y-1" />
         </>
       )}
