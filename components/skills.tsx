@@ -1,13 +1,13 @@
 "use client";
 
-import React from 'react'
+import React from "react";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
-import { skillsData } from '@/lib/data'
-import { useSectionInView } from '@/lib/hooks';
+import { skillsData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 
-import SectionHeading from '@/components/section-heading'
+import SectionHeading from "@/components/section-heading";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -27,17 +27,11 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section
-      className="mb-28 sm:mb-40 scroll-mt-28"
-      id="skills"
-      ref={ref}
-    >
+    <section className="mb-28 sm:mb-40 scroll-mt-28" id="skills" ref={ref}>
       <SectionHeading>My skills</SectionHeading>
-      <ul
-        className="flex flex-wrap justify-start gap-2 text-lg text-gray-800"
-      >
+      <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
-          <motion.li 
+          <motion.li
             key={index}
             className="flex items-center justify-center bg-white borderBlack rounded-xl px-5 py-3 gap-x-2 dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
@@ -48,15 +42,11 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <div
-              style={{ color: skill.color}}
-            >
-              {skill.icon}
-            </div>
+            <div style={{ color: skill.color }}>{skill.icon}</div>
             {skill.name}
           </motion.li>
         ))}
       </ul>
     </section>
-  )
+  );
 }
