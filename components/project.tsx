@@ -12,7 +12,7 @@ import { Dictionary } from "@/lib/types";
 export default function Project({
   project,
 }: {
-  project: Dictionary["projectsData"][number];
+  project: Dictionary["projectsData"]["projects"][number];
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

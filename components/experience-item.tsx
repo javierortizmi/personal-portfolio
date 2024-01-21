@@ -14,7 +14,7 @@ const ICONS: { [key: string]: React.ComponentType } = {
 export default function ExperienceItem({
   experience,
 }: {
-  experience: Dictionary["experiencesData"][number];
+  experience: Dictionary["experiencesData"]["experiences"][number];
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
