@@ -11,21 +11,18 @@ import { motion } from 'framer-motion';
 
 import photo from "@/public/photo.jpg";
 import { useSectionInView } from '@/lib/hooks';
+import { useDictionary } from '@/context/dictionary-context';
 import { useActiveSectionContext } from '@/context/active-section-context';
-import { Dictionary } from '@/lib/types';
 
-export default function Intro({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
+export default function Intro() {
+  const {dictionary} = useDictionary();
   const { ref } = useSectionInView(dictionary.links[0].name, 0.6);
   const { setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <section className="mb-20 sm:mb-0 scroll-mt-96" id="home" ref={ref}>
-      <div className="flex items-center justify-start mb-6">
+      <div className="flex items-center justify-start mb-10">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -57,11 +54,24 @@ export default function Intro({
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 text-xl font-medium !leading-normal sm:text-2xl md:text-3xl lg:text-4xl"
+        className="mb-10 mt-4 text-xl font-medium !leading-normal "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        dangerouslySetInnerHTML={{ __html: dictionary.introData.introParagraph }}
-      />
+      >
+        <p className="text-4xl mb-6">
+          {dictionary.introData.introParagraph1}
+          <span className="font-semibold">Javier Ortiz Millan</span>
+        </p>
+        <p className="text-2xl">
+          {dictionary.introData.introParagraph2}
+          <span className="underline">
+            {dictionary.introData.introParagraph3}
+          </span>
+          {dictionary.introData.introParagraph4}
+          <span className="italic">{dictionary.introData.introParagraph5}</span>
+          <span className="text-cyan-800">{dictionary.introData.introParagraph6}</span>
+        </p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col w-full md:flex-row items-center justify-center gap-2 md:gap-4 text-md font-medium"

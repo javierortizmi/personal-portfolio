@@ -1,25 +1,27 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-import { Toaster } from 'sonner'
+import { Toaster } from "sonner";
 
-import Header from '@/components/header'
-import Footer from '@/components/footer'
-import ThemeSwitch from '@/components/theme-switch'
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import ThemeSwitch from "@/components/theme-switch";
 
-import ThemeContextProvider from '@/context/theme-context'
-import ActiveSectionContextProvider from '@/context/active-section-context'
-import { Locale, i18n } from '@/i18n-config'
-import { getDictionary } from '@/get-dictionary'
-import LocaleSwitch from '@/components/locale-switch'
+import ThemeContextProvider from "@/context/theme-context";
+import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Locale, i18n } from "@/i18n-config";
+import { getDictionary } from "@/get-dictionary";
+import LocaleSwitch from "@/components/locale-switch";
+import DictionaryContextProvider from "@/context/dictionary-context";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Javier | Personal Portfolio',
-  description: 'Welcome to my personal portfolio! I am a Telecommunications Engineer Student at the University of Carlos III Madrid. I am passionate about technology and I love to learn new things. I am currently learning web development and I am looking for an internship to improve my skills.', 
-}
+  title: "Javier | Personal Portfolio",
+  description:
+    "Welcome to my personal portfolio! I am a Telecommunications Engineer Student at the University of Carlos III Madrid. I am passionate about technology and I love to learn new things. I am currently learning web development and I am looking for an internship to improve my skills.",
+};
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -44,12 +46,17 @@ export default async function RootLayout({
 
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
-            <Header dictionary={dictionary} />
-            {children}
-            <Footer dictionary={dictionary} />
-            <LocaleSwitch lang={params.lang} />
-            <ThemeSwitch />
-            <Toaster position="bottom-left" />
+            <DictionaryContextProvider
+              dictionary={dictionary}
+              lang={params.lang}
+            >
+              <Header />
+              {children}
+              <Footer />
+              <LocaleSwitch />
+              <ThemeSwitch />
+              <Toaster position="bottom-left" />
+            </DictionaryContextProvider>
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>

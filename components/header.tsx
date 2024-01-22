@@ -6,16 +6,12 @@ import Link from "next/link";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
-import { Dictionary } from "@/lib/types";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useDictionary } from "@/context/dictionary-context";
 
-export default function Header({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const {dictionary} = useDictionary();
 
   return (
     <header className="z-50 relative flex justify-center">

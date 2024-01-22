@@ -4,19 +4,10 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { i18n, type Locale } from "@/i18n-config";
 import { GB, ES } from "country-flag-icons/react/3x2";
+import { useDictionary } from "@/context/dictionary-context";
 
-export default function LocaleSwitch({
-  lang,
-}: {
-  lang: Locale;
-}) {
-  const pathName = usePathname();
-  const redirectedPathName = (locale: Locale) => {
-    if (!pathName) return "/";
-    const segments = pathName.split("/");
-    segments[1] = locale;
-    return segments.join("/");
-  };
+export default function LocaleSwitch() {
+  const {lang} = useDictionary();
 
   return (
     <Link

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function SectionDivider() {
   return (
     <motion.div
-      className="h-16 hidden sm:flex sm:items-center sm:justify-center sm:my-20 md:my-28"
+      className="h-16 hidden sm:flex sm:items-center sm:justify-center sm:my-16 md:my-20"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.15 }}

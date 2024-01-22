@@ -1,14 +1,19 @@
 {
   "links": [
     { "name": "Inicio", "hash": "#home" },
-    { "name": "Acerca de mí", "hash": "#about" },
     { "name": "Proyectos", "hash": "#projects" },
     { "name": "Tecnologías", "hash": "#skills" },
     { "name": "Experiencia", "hash": "#experience" },
+    { "name": "Acerca de mí", "hash": "#about" },
     { "name": "Contacto", "hash": "#contact" }
   ],
   "introData": {
-    "introParagraph": "¡Hola! Soy Javier Ortiz Millan, un estudiante de Ingeniería de Telecomunicaciones con especialización en Sonido e Imagen. Mi enfoque es la Inteligencia Artificial aplicada al Audio. También disfruto construyendo sitios y aplicaciones.",
+    "introParagraph1": "¡Hola! Soy ",
+    "introParagraph2": " Estudiante de Ingeniería de ",
+    "introParagraph3": "Telecomunicaciones",
+    "introParagraph4": ", especialización en ",
+    "introParagraph5": "Sonido e Imagen",
+    "introParagraph6": ". De Madrid, España.",
     "ContactBtn": "Contáctame aquí",
     "CVBtn": "Descargar CV"
   },
@@ -89,7 +94,8 @@
   },
   "contactData": {
     "title": "Contáctame",
-    "description": "Por favor, contáctame directamente en javierortizmi@gmail.com o a través de este formulario.",
+    "description1": "Por favor, contáctame directamente enviando un email a ",
+    "description2": " o a través de este formulario.",
     "placeholderEmail": "Tu email",
     "placeholderMessage": "Tu mensaje",
     "submitBtn": "Enviar"

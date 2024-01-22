@@ -6,14 +6,11 @@ import { motion } from "framer-motion";
 
 import { useSectionInView } from "@/lib/hooks";
 import SectionHeading from "@/components/section-heading";
-import { Dictionary } from "@/lib/types";
+import { useDictionary } from "@/context/dictionary-context";
 
-export default function About({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
-  const { ref } = useSectionInView(dictionary.links[1].name, 0.85);
+export default function About() {
+  const { dictionary } = useDictionary();
+  const { ref } = useSectionInView(dictionary.links[4].name, 0.85);
 
   return (
     <motion.section

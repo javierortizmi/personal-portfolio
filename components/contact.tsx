@@ -1,22 +1,20 @@
 "use client";
 
 import React from 'react';
+import Link from 'next/link';
 
 import { toast } from 'sonner';
 import { motion } from 'framer-motion';
 
 import { useSectionInView } from '@/lib/hooks';
-import { sendEmail } from '@/actions/sendEmail';
-
 import SubmitBtn from '@/components/submit-btn';
+import { sendEmail } from '@/actions/sendEmail';
 import SectionHeading from '@/components/section-heading'
-import { Dictionary } from '@/lib/types';
+import { useDictionary } from '@/context/dictionary-context';
 
-export default function Contact({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
+
+export default function Contact() {
+  const { dictionary } = useDictionary();
   const { ref } = useSectionInView(dictionary.links[5].name);
 
   return (
@@ -31,7 +29,9 @@ export default function Contact({
     >
       <SectionHeading>{dictionary.contactData.title}</SectionHeading>
       <p className="text-gray-700 dark:text-white/80">
-        {dictionary.contactData.description}
+        {dictionary.contactData.description1}
+        <Link href="mailto:javierortizmi@gmail.com" className="hover:underline">javierortizmi@gmail.com</Link>
+        {dictionary.contactData.description2}
       </p>
       <form
         action={async (formData) => {

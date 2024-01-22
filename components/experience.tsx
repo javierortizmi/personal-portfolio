@@ -2,18 +2,14 @@
 
 import React from "react";
 
-import { Dictionary } from "@/lib/types";
 import { useSectionInView } from "@/lib/hooks";
-
 import ExperienceItem from "@/components/experience-item";
 import SectionHeading from "@/components/section-heading";
+import { useDictionary } from "@/context/dictionary-context";
 
-export default function Experience({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
-  const { ref } = useSectionInView(dictionary.links[4].name);
+export default function Experience() {
+  const { dictionary } = useDictionary();
+  const { ref } = useSectionInView(dictionary.links[3].name);
 
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28">

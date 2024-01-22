@@ -6,9 +6,8 @@ import { motion } from "framer-motion";
 
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-
 import SectionHeading from "@/components/section-heading";
-import { Dictionary } from "@/lib/types";
+import { useDictionary } from "@/context/dictionary-context";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -24,12 +23,9 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills({
-  dictionary,
-}: {
-  dictionary: Dictionary;
-}) {
-  const { ref } = useSectionInView(dictionary.links[3].name);
+export default function Skills() {
+  const { dictionary } = useDictionary();
+  const { ref } = useSectionInView(dictionary.links[2].name);
 
   return (
     <section className="mb-28 sm:mb-40 scroll-mt-28" id="skills" ref={ref}>

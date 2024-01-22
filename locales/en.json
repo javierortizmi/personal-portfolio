@@ -1,14 +1,19 @@
 {
   "links": [
     { "name": "Home", "hash": "#home" },
-    { "name": "About", "hash": "#about" },
     { "name": "Projects", "hash": "#projects" },
     { "name": "Skills", "hash": "#skills" },
     { "name": "Experience", "hash": "#experience" },
+    { "name": "About", "hash": "#about" },
     { "name": "Contact", "hash": "#contact" }
   ],
   "introData": {
-    "introParagraph": "Hi there! I'm <b>Javier Ortiz Millan</b>, a <u>Telecommunications Engineering</u> student with a concentration in <i>Sound and Image</i>. My focus is <u>Audio AI</u>. I also enjoy building <i>sites & apps</i>.",
+    "introParagraph1": "Hi there! I'm ",
+    "introParagraph2": "I'm a ",
+    "introParagraph3": "Telecommunications Engineering",
+    "introParagraph4": " student with a concentration in ",
+    "introParagraph5": "Sound and Image",
+    "introParagraph6": ". From Madrid, Spain",
     "ContactBtn": "Contact me here",
     "CVBtn": "Download CV"
   },
@@ -85,7 +90,8 @@
   },
   "contactData": {
     "title": "Contact Me",
-    "description": "Please contact me directly at javierortizmi@gmail.com or through this form.",
+    "description1": "Please contact me directly at ",
+    "description2": " or through this form.",
     "placeholderEmail": "Your email",
     "placeholderMessage": "Your message",
     "submitBtn": "Submit"
