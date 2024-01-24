@@ -69,7 +69,9 @@
         "demoUrl": null,
         "codeUrl": "https://github.com/javierortizmi/AutonomousVehicle"
       }
-    ]
+    ],
+    "demoBtn": "Explore Demo",
+    "codeBtn": "View Code"
   },
   "skillsData": {
     "title": "Skills"

@@ -69,7 +69,9 @@ export default function Intro() {
           </span>
           {dictionary.introData.introParagraph4}
           <span className="italic">{dictionary.introData.introParagraph5}</span>
-          <span className="text-cyan-800">{dictionary.introData.introParagraph6}</span>
+          <span className="text-[#676394]">
+            {dictionary.introData.introParagraph6}
+          </span>
         </p>
       </motion.h1>
 

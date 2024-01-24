@@ -8,6 +8,7 @@ import { IoTelescope } from "react-icons/io5";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Dictionary } from "@/lib/types";
+import { useDictionary } from "@/context/dictionary-context";
 
 export default function Project({
   project,
@@ -21,6 +22,7 @@ export default function Project({
   });
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1.0]);
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1.0]);
+  const { dictionary } = useDictionary();
 
   return (
     <motion.div
@@ -48,7 +50,7 @@ export default function Project({
                 target="_blank"
                 className="group/demo w-48 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-blue-600 text-gray-50 rounded-lg outline-none focus:scale-105 hover:scale-105 active:scale-100 hover:bg-blue-700 transition capitalize dark:text-gray-200"
               >
-                explore demo
+                {dictionary.projectsData.demoBtn}
                 <IoTelescope className="group-hover/demo:-rotate-[20deg] transition" />
               </Link>
             )}
@@ -58,7 +60,7 @@ export default function Project({
                 target="_blank"
                 className="group/code w-48 md:w-fit flex justify-center items-center gap-x-2 p-2 bg-gray-50 text-gray-950 rounded-lg borderBlack outline-none focus:scale-105 hover:scale-105 active:scale-100 transition capitalize dark:bg-gray-200"
               >
-                view code
+                {dictionary.projectsData.codeBtn}
                 <FaCode className="group-hover/code:rotate-180 transition" />
               </Link>
             )}

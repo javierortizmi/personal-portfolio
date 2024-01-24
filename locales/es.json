@@ -73,32 +73,34 @@
         "demoUrl": null,
         "codeUrl": "https://github.com/javierortizmi/AutonomousVehicle"
       }
-    ]
+    ],
+    "demoBtn": "Explorar demo",
+    "codeBtn": "Ver código"
   },
   "skillsData": {
     "title": "Tecnologías"
   },
   "aboutData": {
     "title": "Acerca de mí",
-    "paragraphs1": "Después de decidir que quería aprender más sobre el mundo de las",
+    "paragraphs1": "Después de decidir que quería aprender más sobre el mundo de las ",
     "paragraphs2": "Telecomunicaciones",
-    "paragraphs3": ", empecé a preguntarme cómo podría combinar mi pasión por mundo del audio con mi experiencia técnica. Comencé a investigar en el campo de la",
+    "paragraphs3": ", empecé a preguntarme cómo podría combinar mi pasión por mundo del audio con mi experiencia técnica. Comencé a investigar en el campo de la ",
     "paragraphs4": "Ingeniería de Sonido e Imagen",
     "paragraphs5": " y quedé fascinado por las posibilidades.",
     "paragraphs6": "Durante mi carrera en la ",
     "paragraphs7": "Universidad Carlos III de Madrid",
     "paragraphs8": ", he tenido la oportunidad de explorar a fondo el campo de las telecomunicaciones. He cursado asignaturas como ",
-    "paragraphs9": "programación orientada a objetos, procesamiento de señales, arquitectura de sistemas, componentes eléctricos y diseño de circuitos, microprocesadores y redes de comunicaciones",
-    "paragraphs10": ". Durante mi año de intercambio en la ",
+    "paragraphs9": "programación orientada a objetos, procesamiento de señales, arquitectura de sistemas, componentes eléctricos y diseño de circuitos, microprocesadores y redes de comunicaciones.",
+    "paragraphs10": "Durante mi año de intercambio en la ",
     "paragraphs11": "Universidad de Maryland, College Park",
     "paragraphs12": ", amplié mis conocimientos en ",
     "paragraphs13": "visión artificial, IA, desarrollo web y de aplicaciones, y ciberseguridad.",
     "paragraphs14":  "Actualmente en busca de ",
     "paragraphs15": "prácticas",
-    "paragraphs16": "para sumergirme más en el mundo de las telecomunicaciones, estoy emocionado por combinar mi experiencia técnica con mi habilidad para la innovación.",
+    "paragraphs16": " para sumergirme más en el mundo de las telecomunicaciones, estoy emocionado por combinar mi experiencia técnica con mi habilidad para la innovación.",
     "paragraphs17": "¡Unámonos para ",
     "paragraphs18": "crear",
-    "paragraphs19": "algo de magia tecnológica!"
+    "paragraphs19": " algo de magia tecnológica!"
   },
   "contactData": {
     "title": "Contáctame",
