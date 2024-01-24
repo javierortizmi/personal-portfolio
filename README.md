@@ -24,7 +24,7 @@
 
 ## Overview
 
-Project based in [ByteGrad](https://github.com/ByteGrad) portfolio-website. I wanted to create a nice-looking animated portfolio that shows the most important information about me and skills.
+Project based in [ByteGrad](https://github.com/ByteGrad) portfolio-website. I wanted to create a nice-looking animated portfolio that shows the most important information about me and skills. Also, I wanted to implement an internationalization functionality. Using different json files, Spanish and English dictionaries are provided to the user.
 
 This website was built with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel hosting.
 
@@ -119,4 +119,4 @@ npm run dev
 
 ## ✅ To Do
 
-- [ ] Add internationalization functionality.
+- [x] Add internationalization functionality.

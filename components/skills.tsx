@@ -30,11 +30,11 @@ export default function Skills() {
   return (
     <section className="mb-28 sm:mb-40 scroll-mt-28" id="skills" ref={ref}>
       <SectionHeading>{dictionary.skillsData.title}</SectionHeading>
-      <ul className="flex flex-wrap justify-center sm:justify-start gap-2 text-lg text-gray-800">
+      <ul className="flex flex-wrap justify-start gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
             key={index}
-            className="flex items-center justify-center bg-white borderBlack rounded-xl px-5 py-3 gap-x-2 dark:bg-white/10 dark:text-white/80"
+            className="flex items-center justify-center bg-white borderBlack rounded-xl px-3 sm:px-5 py-3 gap-x-2 dark:bg-white/10 dark:text-white/80"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView={"animate"}
