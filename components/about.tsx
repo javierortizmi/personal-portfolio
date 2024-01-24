@@ -19,16 +19,48 @@ export default function About() {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.2 }}
-      className="flex flex-col justify-start w-full mb-20 leading-7 sm:mb-28 scroll-mt-28"
+      className="flex flex-col justify-start w-full mb-20 sm:mb-24 scroll-mt-28"
     >
       <SectionHeading>{dictionary.aboutData.title}</SectionHeading>
-      {dictionary.aboutData.paragraphs.map((paragraph, index) => (
-        <p
-          key={index}
-          className="mb-3 last:mb-0"
-          dangerouslySetInnerHTML={{ __html: paragraph }}
-        />
-      ))}
+      <div className="[&>p]:mb-3">
+        <p>
+          {dictionary.aboutData.paragraphs1}
+          <span className="underline">{dictionary.aboutData.paragraphs2}</span>
+          {dictionary.aboutData.paragraphs3}
+          <span className="font-semibold">
+            {dictionary.aboutData.paragraphs4}
+          </span>
+          {dictionary.aboutData.paragraphs5}
+        </p>
+        <p>
+          {dictionary.aboutData.paragraphs6}
+          <span className="font-semibold">
+            {dictionary.aboutData.paragraphs7}
+          </span>
+          {dictionary.aboutData.paragraphs8}
+          <span className="italic">{dictionary.aboutData.paragraphs9}</span>
+        </p>
+        <p>
+          {dictionary.aboutData.paragraphs10}
+          <span className="font-semibold">
+            {dictionary.aboutData.paragraphs11}
+          </span>
+          {dictionary.aboutData.paragraphs12}
+          <span className="italic">{dictionary.aboutData.paragraphs13}</span>
+        </p>
+        <p>
+          {dictionary.aboutData.paragraphs14}
+          <span className="font-semibold">
+            {dictionary.aboutData.paragraphs15}
+          </span>
+          {dictionary.aboutData.paragraphs16}
+        </p>
+        <p>
+          {dictionary.aboutData.paragraphs17}
+          <span className="underline">{dictionary.aboutData.paragraphs18}</span>
+          {dictionary.aboutData.paragraphs19}
+        </p>
+      </div>
     </motion.section>
   );
 }

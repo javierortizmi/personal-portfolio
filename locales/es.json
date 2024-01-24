@@ -9,9 +9,9 @@
   ],
   "introData": {
     "introParagraph1": "¡Hola! Soy ",
-    "introParagraph2": " Estudiante de Ingeniería de ",
-    "introParagraph3": "Telecomunicaciones",
-    "introParagraph4": ", especialización en ",
+    "introParagraph2": " Estudiante de ",
+    "introParagraph3": "Ingeniería de Telecomunicaciones",
+    "introParagraph4": ", con especialización en ",
     "introParagraph5": "Sonido e Imagen",
     "introParagraph6": ". De Madrid, España.",
     "ContactBtn": "Contáctame aquí",
@@ -25,7 +25,7 @@
         "location": "Madrid, España",
         "description": "Ingeniería de Telecomunicaciones con especialización en Sonido e Imagen en la Universidad Carlos III.",
         "icon": "education",
-        "date": "Se espera en junio de 2025"
+        "date": "Jun 2025"
       },
       {
         "title": "Estudiante de Ingeniería Informática y Eléctrica",
@@ -37,7 +37,7 @@
       {
         "title": "Profesor particular de Matemáticas",
         "location": "Madrid, España",
-        "description": "Impartí lecciones útiles que enfatizan la práctica y la aplicación en la vida real. Utilicé una variedad de métodos de enseñanza según las necesidades y el estilo de aprendizaje del estudiante.",
+        "description": "Impartí lecciones que enfatizan la práctica y la aplicación en la vida real. Utilicé una variedad de métodos de enseñanza según las necesidades y el estilo de aprendizaje del estudiante.",
         "icon": "work",
         "date": "Feb 2023 - Jun 2023"
       },
@@ -54,8 +54,8 @@
     "title": "Proyectos",
     "projects": [
       {
-        "title": "Aplicación Reproductor de Música",
-        "description": "Clon de Spotify codificado en Kotlin y desarrollado en Android Studio. Obtiene las canciones de una base de datos de Firebase y proporciona la función de ajustar el volumen del dispositivo con la velocidad del usuario (GPS).",
+        "title": "Reproductor de Música",
+        "description": "Clon de Spotify programado en Kotlin y desarrollado en Android Studio. Obtiene las canciones de una base de datos de Firebase y proporciona la característica de ajustar el volumen del dispositivo con la velocidad del usuario (GPS).",
         "tags": ["Android Studio", "Kotlin", "GPS", "Google Ads", "Firebase"],
         "imageUrl": "/music_player_preview.jpg",
         "demoUrl": "https://appetize.io/app/2va72f4rcuub446rz5mn22ve6m?audio=true&device=pixel7pro&osVersion=13.0",
@@ -80,17 +80,25 @@
   },
   "aboutData": {
     "title": "Acerca de mí",
-    "paragraphs": [
-      "Después de decidir que quería seguir una carrera en <u>Telecomunicaciones</u>, empecé a preguntarme cómo podría combinar mi pasión por el intrincado mundo del audio con mi experiencia técnica. Comencé a investigar en el campo de <b>Audio IA</b> y quedé fascinado por las posibilidades.",
-
-      "Durante mi carrera en la <b>Universidad Carlos III de Madrid</b>, he tenido la oportunidad de explorar a fondo el campo de las telecomunicaciones. He cursado asignaturas como <i>programación orientada a objetos, procesamiento de señales, arquitectura de sistemas, componentes eléctricos y diseño de circuitos, microprocesadores y redes de computadoras</i>. Durante mi año de intercambio en la <b>Universidad de Maryland, College Park</b>, amplié mis conocimientos en <i>visión por computadora, inteligencia artificial, desarrollo web y de aplicaciones, y ciberseguridad.</i>",
-
-      "Actualmente en busca de <b>prácticas</b> para sumergirme más en el mundo de las telecomunicaciones, estoy emocionado por combinar mi experiencia técnica con mi habilidad para la innovación.",
-
-      "Cuando no estoy programando, disfruto produciendo música, jugando videojuegos y aprendiendo cosas nuevas.",
-
-      "¡Unámonos y <u>creemos</u> algo de magia tecnológica!"
-    ]
+    "paragraphs1": "Después de decidir que quería aprender más sobre el mundo de las",
+    "paragraphs2": "Telecomunicaciones",
+    "paragraphs3": ", empecé a preguntarme cómo podría combinar mi pasión por mundo del audio con mi experiencia técnica. Comencé a investigar en el campo de la",
+    "paragraphs4": "Ingeniería de Sonido e Imagen",
+    "paragraphs5": " y quedé fascinado por las posibilidades.",
+    "paragraphs6": "Durante mi carrera en la ",
+    "paragraphs7": "Universidad Carlos III de Madrid",
+    "paragraphs8": ", he tenido la oportunidad de explorar a fondo el campo de las telecomunicaciones. He cursado asignaturas como ",
+    "paragraphs9": "programación orientada a objetos, procesamiento de señales, arquitectura de sistemas, componentes eléctricos y diseño de circuitos, microprocesadores y redes de comunicaciones",
+    "paragraphs10": ". Durante mi año de intercambio en la ",
+    "paragraphs11": "Universidad de Maryland, College Park",
+    "paragraphs12": ", amplié mis conocimientos en ",
+    "paragraphs13": "visión artificial, IA, desarrollo web y de aplicaciones, y ciberseguridad.",
+    "paragraphs14":  "Actualmente en busca de ",
+    "paragraphs15": "prácticas",
+    "paragraphs16": "para sumergirme más en el mundo de las telecomunicaciones, estoy emocionado por combinar mi experiencia técnica con mi habilidad para la innovación.",
+    "paragraphs17": "¡Unámonos para ",
+    "paragraphs18": "crear",
+    "paragraphs19": "algo de magia tecnológica!"
   },
   "contactData": {
     "title": "Contáctame",

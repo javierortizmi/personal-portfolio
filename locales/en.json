@@ -76,17 +76,25 @@
   },
   "aboutData": {
     "title": "About Me",
-    "paragraphs": [
-      "After deciding that I wanted to pursue a career in Telecommunications, I started wondering how I could combine my passion for the intricate world of audio with my technical expertise. I started researching the field of Audio AI and was fascinated by the possibilities.",
-
-      "During my degree at Carlos III University of Madrid, I have been able to explore the field of telecommunications in depth. I have taken courses in object-oriented programming, signal processing, systems architecture, electric components and circuit design, microprocessors, and computer networks. During my year abroad at University of Maryland, College Park, I expanded my knowledge in computer vision, artificial intelligence, web and app development, and cybersecurity.",
-
-      "Currently on the lookout for an internship to dive deeper into the world of telecommunications, I'm excited to blend my technical expertise with my knack for innovation.",
-
-      "When I'm not coding, I enjoy producing music, playing video games, and learning new things.",
-
-      "Let's join forces and create some tech magic!"
-    ]
+    "paragraphs1": "After deciding that I wanted to pursue a career in ",
+    "paragraphs2": "Telecommunications",
+    "paragraphs3": ", I started wondering how I could combine my passion for the intricate world of audio with my technical expertise. I started researching the field of ",
+    "paragraphs4": "Audio and Image Engineering",
+    "paragraphs5": " and was fascinated by the possibilities.",
+    "paragraphs6": "During my degree at ",
+    "paragraphs7": "Universidad Carlos III de Madrid",
+    "paragraphs8": ", I have been able to explore the field of telecommunications in depth. I have taken courses in ",
+    "paragraphs9": "object-oriented programming, signal processing, systems architecture, electric components and circuit design, microprocessors, and computer networks.",
+    "paragraphs10": "During my year abroad at ",
+    "paragraphs11": "University of Maryland, College Park",
+    "paragraphs12": ", I expanded my knowledge in ",
+    "paragraphs13": "computer vision, AI, web and app development, and cybersecurity.",
+    "paragraphs14":  "Currently on the lookout for an ",
+    "paragraphs15": "internship",
+    "paragraphs16": " to dive deeper into the world of telecommunications, I'm excited to blend my technical expertise with my knack for innovation.",
+    "paragraphs17": "Let's join forces and ",
+    "paragraphs18": "create",
+    "paragraphs19": " some tech magic!"
   },
   "contactData": {
     "title": "Contact Me",
