@@ -69,7 +69,7 @@ export default function Intro() {
           </span>
           {dictionary.introData.introParagraph4}
           <span className="italic">{dictionary.introData.introParagraph5}</span>
-          <span className="text-[#676394]">
+          <span className="text-[#676394] dark:text-[#8a8fb8]">
             {dictionary.introData.introParagraph6}
           </span>
         </p>
