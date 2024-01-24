@@ -1,18 +1,21 @@
-import React, { useRef } from 'react'
+import React, { useRef } from "react";
 
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform } from "framer-motion";
 
-import { experiencesData } from '@/lib/data';
+import { Dictionary } from "@/lib/types";
+import { CgWorkAlt } from "react-icons/cg";
+import { LuGraduationCap } from "react-icons/lu";
 
-type ExperienceItemProps = (typeof experiencesData)[number];
+const ICONS: { [key: string]: React.ComponentType } = {
+  work: CgWorkAlt,
+  education: LuGraduationCap,
+};
 
 export default function ExperienceItem({
-  title,
-  location,
-  description,
-  icon,
-  date,
-}: ExperienceItemProps) {
+  experience,
+}: {
+  experience: Dictionary["experiencesData"]["experiences"][number];
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -24,7 +27,7 @@ export default function ExperienceItem({
   return (
     <article className="mb-10 last:mb-0 ms-7 w-full overflow-hidden">
       <div className="absolute w-8 h-8 rounded-full -start-4 border border-gray-900 bg-gray-700 flex items-center justify-center">
-        <div className="text-gray-50">{icon}</div>
+        <div className="text-gray-50">{React.createElement(ICONS[experience.icon])}</div>
       </div>
       <motion.div
         className="pt-[0.2rem]"
@@ -35,16 +38,16 @@ export default function ExperienceItem({
         }}
       >
         <time className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-white/40">
-          {date}
+          {experience.date}
         </time>
         <h3 className="text-lg font-semibold text-gray-950 mt-2 dark:text-white/90">
-          {title}
+          {experience.title}
         </h3>
         <p className="mb-4 text-gray-700 text-pretty dark:text-white/60">
-          {description}
+          {experience.description}
         </p>
         <p className="mb-1 text-sm font-normal leading-none text-gray-500 dark:text-white/40">
-          {location}
+          {experience.location}
         </p>
       </motion.div>
     </article>

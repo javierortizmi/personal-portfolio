@@ -11,16 +11,18 @@ import { motion } from 'framer-motion';
 
 import photo from "@/public/photo.jpg";
 import { useSectionInView } from '@/lib/hooks';
+import { useDictionary } from '@/context/dictionary-context';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
-  const { ref } = useSectionInView('Home', 0.6);
+  const {dictionary} = useDictionary();
+  const { ref } = useSectionInView(dictionary.links[0].name, 0.6);
   const { setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
   return (
     <section className="mb-20 sm:mb-0 scroll-mt-96" id="home" ref={ref}>
-      <div className="flex items-center justify-start mb-6">
+      <div className="flex items-center justify-start mb-10">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -52,18 +54,25 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 text-xl font-medium !leading-normal sm:text-2xl md:text-3xl lg:text-4xl"
+        className="mb-10 mt-4 text-xl font-medium !leading-normal "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Hi there! I&apos;m{" "}
-        <span className="font-bold">Javier Ortiz Millan,</span> a&nbsp;
-        <span className="underline">Telecommunications Engineering</span>{" "}
-        student with a concentration in&nbsp;
-        <span className="italic">Sound and Image. </span>
-        My focus is&nbsp;
-        <span className="underline">Audio AI</span>. I also enjoy building{" "}
-        <span className="italic">sites & apps</span>.
+        <p className="text-4xl mb-6">
+          {dictionary.introData.introParagraph1}
+          <span className="font-semibold">Javier Ortiz Millan</span>
+        </p>
+        <p className="text-2xl">
+          {dictionary.introData.introParagraph2}
+          <span className="underline">
+            {dictionary.introData.introParagraph3}
+          </span>
+          {dictionary.introData.introParagraph4}
+          <span className="italic">{dictionary.introData.introParagraph5}</span>
+          <span className="text-[#676394]">
+            {dictionary.introData.introParagraph6}
+          </span>
+        </p>
       </motion.h1>
 
       <motion.div
@@ -76,11 +85,11 @@ export default function Intro() {
           href="#contact"
           className="group h-12 w-56 md:w-auto bg-gray-900 text-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-100 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection(dictionary.links[5].name);
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here
+          {dictionary.introData.ContactBtn}
           <BsArrowRight className="opacity-60 group-hover:translate-x-1 transition" />
         </Link>
         <a
@@ -88,7 +97,7 @@ export default function Intro() {
           download
           className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10"
         >
-          Download CV
+          {dictionary.introData.CVBtn}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <Link
