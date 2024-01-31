@@ -10,7 +10,7 @@ import { useDictionary } from "@/context/dictionary-context";
 
 export default function About() {
   const { dictionary } = useDictionary();
-  const { ref } = useSectionInView(dictionary.links[4].name, 0.85);
+  const { ref } = useSectionInView(dictionary.links[4].name);
 
   return (
     <motion.section
