@@ -31,7 +31,7 @@ export function middleware(request: NextRequest) {
   // If you have one
   if (
     [
-      '/CV.pdf',
+      '/CV_Javier_Ortiz_Millan.pdf',
       '/music_player_preview.jpg',
       '/photo.jpg',
       '/robot_preview.jpg',

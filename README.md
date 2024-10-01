@@ -43,60 +43,60 @@ This website was built with React & Next.js (App Router & Server Actions), Types
 
 1. [Fork](https://github.com/javierortizmi/PersonalPortfolio/fork) or clone this repository.
 
-```bash
-git clone https://github.com/javierortizmi/PersonalPortfolio.git
-```
+    ```bash
+    git clone https://github.com/javierortizmi/PersonalPortfolio.git
+    ```
 
 2. Install the dependencies:
 
-- You can use [bun](https://bun.sh) to install and manage the dependencies.
+    - You can use [bun](https://bun.sh) to install and manage the dependencies.
 
-```bash
-# Install bun for MacOS, WSL & Linux:
-curl -fsSL https://bun.sh/install | bash
+    ```bash
+    # Install bun for MacOS, WSL & Linux:
+    curl -fsSL https://bun.sh/install | bash
 
-# Install bun for Windows:
-powershell -c "iwr bun.sh/install.ps1|iex"
+    # Install bun for Windows:
+    powershell -c "iwr bun.sh/install.ps1|iex"
 
-# Install dependencies with bun:
-bun install
-```
+    # Install dependencies with bun:
+    bun install
+    ```
 
-- or you can use [pnpm](https://pnpm.io):
+    - or you can use [pnpm](https://pnpm.io):
 
-```bash
-# Install pnpm globally if you don't have it:
-npm install -g pnpm
+    ```bash
+    # Install pnpm globally if you don't have it:
+    npm install -g pnpm
 
-# Install dependencies with pnpm:
-pnpm install
-```
+    # Install dependencies with pnpm:
+    pnpm install
+    ```
 
-- or simply use [npm](https://www.npmjs.com/)
+    - or simply use [npm](https://www.npmjs.com/)
 
-```bash
-# Install dependencies with npm:
-npm install
-```
+    ```bash
+    # Install dependencies with npm:
+    npm install
+    ```
 
 3. Create the `.env.local` file and add the `RESEND_API_KEY` to it.
 
-```bash
-RESEND_API_KEY=your_resend_api_key
-```
+    ```bash
+    RESEND_API_KEY=your_resend_api_key
+    ```
 
 4. Run the development server:
 
-```bash
-# Run with bun:
-bun dev
+    ```bash
+    # Run with bun:
+    bun dev
 
-# Run with pnpm:
-pnpm dev
+    # Run with pnpm:
+    pnpm dev
 
-# Run with npm:
-npm run dev
-```
+    # Run with npm:
+    npm run dev
+    ```
 
 5. Open [**http://localhost:3000**](http://localhost:3000/) with your browser to see the result 🚀
 

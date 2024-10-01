@@ -93,8 +93,8 @@ export default function Intro() {
           <BsArrowRight className="opacity-60 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          href="/CV.pdf"
-          download
+          href="/CV_Javier_Ortiz_Millan.pdf"
+          target='_blank'
           className="group h-12 w-56 md:w-auto bg-white px-5 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10"
         >
           {dictionary.introData.CVBtn}

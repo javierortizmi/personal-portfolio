@@ -25,7 +25,7 @@ const fadeInAnimationVariants = {
 
 export default function Skills() {
   const { dictionary } = useDictionary();
-  const { ref } = useSectionInView(dictionary.links[2].name);
+  const { ref } = useSectionInView(dictionary.links[3].name);
 
   return (
     <section className="mb-28 sm:mb-40 scroll-mt-28" id="skills" ref={ref}>

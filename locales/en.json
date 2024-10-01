@@ -1,9 +1,9 @@
 {
   "links": [
     { "name": "Home", "hash": "#home" },
+    { "name": "Experience", "hash": "#experience" },
     { "name": "Projects", "hash": "#projects" },
     { "name": "Skills", "hash": "#skills" },
-    { "name": "Experience", "hash": "#experience" },
     { "name": "About", "hash": "#about" },
     { "name": "Contact", "hash": "#contact" }
   ],
@@ -21,30 +21,23 @@
     "title": "Experience",
     "experiences": [
       {
-        "title": "Telecommunications Engineering student",
-        "location": "Madrid, Spain",
-        "description": "Telecommunications Engineering with a concentration in Sound and Image at Carlos III University.",
-        "icon": "education",
-        "date": "Expected in June 2025"
-      },
-      {
-        "title": "Computer and Electrical Engineering student",
-        "location": "College Park, MD",
-        "description": "Exchange Year Engineering program at University of Maryland, College Park.",
-        "icon": "education",
-        "date": "Aug 2023 - May 2024"
+        "title": "Software Development Internship",
+        "location":"Madrid, Spain",
+        "description": "During my internship at Tierra Audio, I had the opportunity to work on the development of a plugin based on the JUCE framework. The goal was to remotely control an audio hardware device using WebSocket technology. I collaborated with the UI/UX team to create an intuitive and functional interface for the end user.",
+        "icon": "work",
+        "date": "May 2024 - Aug 2024"
       },
       {
         "title": "Mathematics Private Tutor",
         "location": "Madrid, Spain",
-        "description": "Provided useful lessons that emphasize practicality and real-life application. I used a variety of teaching methods depending on the student's needs and learning style.",
+        "description": "Personalized tutoring for high school students, helping them improve their grades and understanding of key concepts. Developed teaching methodologies tailored to the individual needs of students.",
         "icon": "work",
         "date": "Feb 2023 - Jun 2023"
       },
       {
         "title": "Lifeguard",
         "location": "Madrid, Spain",
-        "description": "Always guaranteed surveillance, security and prevention. I also provided first aid when needed and intervened in different situations of risk with total success.",
+        "description": "Supervision and assurance of safety, performing first aid tasks and assistance in emergency situations. Maintained safety standards and compliance with regulations in aquatic facilities.",
         "icon": "work",
         "date": "Jun 2022 - Jun 2023 (Seasonal)"
       }
@@ -54,8 +47,8 @@
     "title": "Projects",
     "projects": [
       {
-        "title": "Music Player App",
-        "description": "Spotify Clone coded in Kotlin and developed in Android Studio, fetches the songs from a Firebase database and provides the feature of adjusting the device volume with the user speed (GPS).",
+        "title": "Music Streaming App",
+        "description": "Spotify Clone coded in Kotlin and developed in Android Studio, fetches the songs from a Firebase database and provides the feature of adjusting the device volume with the user speed (making use of GPS).",
         "tags": ["Android Studio", "Kotlin", "GPS", "Google Ads", "Firebase"],
         "imageUrl": "/music_player_preview.jpg",
         "demoUrl": "https://appetize.io/app/2va72f4rcuub446rz5mn22ve6m?audio=true&device=pixel7pro&osVersion=13.0",
@@ -63,8 +56,8 @@
       },
       {
         "title": "Robot with Obstacle Detection",
-        "description": "Autonomous Vehicle Project developed in C, shows the acquired knowledge in several peripherals controlled by the microcontroller NUCLEO-L152RE Board.",
-        "tags": ["C (Programming Language)", "STMicroelectronics", "Bluetooth"],
+        "description": "Autonomous Vehicle Project developed in C, shows the acquired knowledge in several peripherals controlled by the microcontroller NUCLEO-L152RE Board by STMicroelectronics.",
+        "tags": ["C (Programming Language)", "STMicroelectronics", "Bluetooth", "STM32CubeIDE"],
         "imageUrl": "/robot_preview.jpg",
         "demoUrl": null,
         "codeUrl": "https://github.com/javierortizmi/AutonomousVehicle"
@@ -91,8 +84,8 @@
     "paragraphs11": "University of Maryland, College Park",
     "paragraphs12": ", I expanded my knowledge in ",
     "paragraphs13": "computer vision, AI, web and app development, and cybersecurity.",
-    "paragraphs14":  "Currently on the lookout for an ",
-    "paragraphs15": "internship",
+    "paragraphs14":  "Currently open to ",
+    "paragraphs15": "work",
     "paragraphs16": " to dive deeper into the world of telecommunications, I'm excited to blend my technical expertise with my knack for innovation.",
     "paragraphs17": "Let's join forces and ",
     "paragraphs18": "create",

@@ -53,7 +53,6 @@ export default async function RootLayout({
               <Header />
               {children}
               <Footer />
-              <LocaleSwitch />
               <ThemeSwitch />
               <Toaster position="bottom-left" />
             </DictionaryContextProvider>

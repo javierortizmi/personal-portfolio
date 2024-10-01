@@ -1,9 +1,9 @@
 {
   "links": [
     { "name": "Inicio", "hash": "#home" },
+    { "name": "Experiencia", "hash": "#experience" },
     { "name": "Proyectos", "hash": "#projects" },
     { "name": "Tecnologías", "hash": "#skills" },
-    { "name": "Experiencia", "hash": "#experience" },
     { "name": "Acerca de mí", "hash": "#about" },
     { "name": "Contacto", "hash": "#contact" }
   ],
@@ -21,30 +21,23 @@
     "title": "Experiencia",
     "experiences": [
       {
-        "title": "Estudiante de Ingeniería de Telecomunicaciones",
+        "title": "Desarrollador de Software (Prácticas) - Tierra Audio",
         "location": "Madrid, España",
-        "description": "Ingeniería de Telecomunicaciones con especialización en Sonido e Imagen en la Universidad Carlos III.",
-        "icon": "education",
-        "date": "Jun 2025"
-      },
-      {
-        "title": "Estudiante de Ingeniería Informática y Eléctrica",
-        "location": "College Park, MD",
-        "description": "Programa de intercambio de Ingeniería en la Universidad de Maryland, College Park.",
-        "icon": "education",
-        "date": "Ago 2023 - May 2024"
+        "description": "Durante mis prácticas en Tierra Audio, tuve la oportunidad de trabajar en el desarrollo de un plugin basado en el framework de JUCE. El objetivo era controlar remotamente un equipo hardware de audio mediante el uso de la tecnología WebSocket. Trabajé junto al equipo de UI/UX para crear una interfaz intuitiva y funcional para el usuario final.",
+        "icon": "work",
+        "date": "May 2024 - Ago 2024"
       },
       {
         "title": "Profesor particular de Matemáticas",
         "location": "Madrid, España",
-        "description": "Impartí lecciones que enfatizan la práctica y la aplicación en la vida real. Utilicé una variedad de métodos de enseñanza según las necesidades y el estilo de aprendizaje del estudiante.",
+        "description": "Tutoría personalizada a estudiantes de bachillerato, ayudándoles a mejorar sus calificaciones y comprensión de conceptos clave. Desarrollo de metodologías de enseñanza adaptadas a las necesidades individuales de los alumnos.",
         "icon": "work",
         "date": "Feb 2023 - Jun 2023"
       },
       {
         "title": "Socorrista",
         "location": "Madrid, España",
-        "description": "Garantizaba siempre vigilancia, seguridad y prevención. También proporcioné primeros auxilios cuando fue necesario e intervine en diferentes situaciones de riesgo con total éxito.",
+        "description": "Supervisión y garantía de la seguridad, realizando tareas de primeros auxilios y asistencia en situaciones de emergencia. Mantenimiento de los estándares de seguridad y cumplimiento de normativas en las instalaciones acuáticas.",
         "icon": "work",
         "date": "Jun 2022 - Jun 2023 (Temporal)"
       }
@@ -54,8 +47,8 @@
     "title": "Proyectos",
     "projects": [
       {
-        "title": "Reproductor de Música",
-        "description": "Clon de Spotify programado en Kotlin y desarrollado en Android Studio. Obtiene las canciones de una base de datos de Firebase y proporciona la característica de ajustar el volumen del dispositivo con la velocidad del usuario (GPS).",
+        "title": "App de Streaming de Música",
+        "description": "Clon de Spotify programado en Kotlin y desarrollado en Android Studio. Obtiene las canciones de una base de datos de Firebase y proporciona la característica de ajustar el volumen del dispositivo con la velocidad del usuario (mediante el uso de GPS).",
         "tags": ["Android Studio", "Kotlin", "GPS", "Google Ads", "Firebase"],
         "imageUrl": "/music_player_preview.jpg",
         "demoUrl": "https://appetize.io/app/2va72f4rcuub446rz5mn22ve6m?audio=true&device=pixel7pro&osVersion=13.0",
@@ -63,11 +56,12 @@
       },
       {
         "title": "Robot con Detección de Obstáculos",
-        "description": "Proyecto de Vehículo Autónomo desarrollado en C, muestra los conocimientos adquiridos en varios periféricos controlados por la placa NUCLEO-L152RE.",
+        "description": "Proyecto de Vehículo Autónomo desarrollado en C, muestra los conocimientos adquiridos en varios periféricos controlados por la placa NUCLEO-L152RE de STMicroelectronics.",
         "tags": [
           "C (Lenguaje de programación)",
           "STMicroelectronics",
-          "Bluetooth"
+          "Bluetooth",
+          "STM32CubeIDE"
         ],
         "imageUrl": "/robot_preview.jpg",
         "demoUrl": null,
@@ -96,7 +90,7 @@
     "paragraphs12": ", amplié mis conocimientos en ",
     "paragraphs13": "visión artificial, IA, desarrollo web y de aplicaciones, y ciberseguridad.",
     "paragraphs14":  "Actualmente en busca de ",
-    "paragraphs15": "prácticas",
+    "paragraphs15": "trabajo",
     "paragraphs16": " para sumergirme más en el mundo de las telecomunicaciones, estoy emocionado por combinar mi experiencia técnica con mi habilidad para la innovación.",
     "paragraphs17": "¡Unámonos para ",
     "paragraphs18": "crear",

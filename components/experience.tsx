@@ -9,7 +9,7 @@ import { useDictionary } from "@/context/dictionary-context";
 
 export default function Experience() {
   const { dictionary } = useDictionary();
-  const { ref } = useSectionInView(dictionary.links[3].name);
+  const { ref } = useSectionInView(dictionary.links[1].name);
 
   return (
     <section id="experience" ref={ref} className="mb-28 scroll-mt-28">

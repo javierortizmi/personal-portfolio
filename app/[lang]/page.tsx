@@ -13,9 +13,9 @@ export default async function IndexPage() {
       <div className="w-full h-36 sm:h-32" />
       <Intro />
       <SectionDivider />
+      <Experience />
       <Projects />
       <Skills />
-      <Experience />
       <About />
       <Contact />
     </main>
